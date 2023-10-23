@@ -32,7 +32,7 @@
 
 ![alt text](Images/6.png)
 
-### Creating a VPC on Azure
+### Creating a Virtual Network on Azure
 
 **Step 1:** Login to Azure Portal
 - https://portal.azure.com/signin/index/
@@ -121,6 +121,7 @@
 ![alt text](Images/18.png)
 
 **Step 8:** OS Disk
+- Standard SSD
 - Check Delete with VM
 
 **Step 9:** Networking 
@@ -156,3 +157,14 @@ Step 11: Advanced
 - You can now copy and paste your public IP address 
 
 ![alt text](Images/23.png)
+
+### SSH into Gitbash manually
+
+- Navigate to your resource that you have created
+- Select `connect`
+- Select `Native SSH`
+- Copy and execute SSH command: `Enter the path to your private key`
+- SSH to VM with specified private key
+
+![alt text](Images/ssh.png)
+![alt text](Images/s1.png)
