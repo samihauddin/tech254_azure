@@ -224,3 +224,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 **Successful output**
 
 ![alt text](Images/data.png)
+
+### 2 tier architecture deployment
+
+![alt text](Images/2t.png)
