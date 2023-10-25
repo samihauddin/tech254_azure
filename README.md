@@ -34,3 +34,21 @@ Within Azure, there are 4 primary levels known as **scopes**.
 ### 2 Tier Architecture Deployment Structure
 
 ![alt text](Images/2t.png)
+
+### System routes - What routes do they allow by default?
+
+System routes are the default routes provided by Azure to allow communication within a virtual network, and to communicate to the Azure infrastructure. <br>
+
+By default, Azure allows the following routes for system routes:
+
+1. *VNet-to-VNet Communication*
+2. *Internet Communication*
+3. *Virtual Network Gateway Communication*
+4. *Virtual Appliances*
+
+### User-defined routes (or custom routes) - how to use them to make a subnet private
+
+- In Azure, you can use user-defined routes (UDRs) to control the flow of network traffic within your virtual network (VNet) and between VNets. <br>
+
+
+- Specifically, you can use UDRs to make a subnet private by controlling the traffic flow in and out of the subnet. 
