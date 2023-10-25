@@ -230,3 +230,44 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 ### 2 Tier Architecture Deployment
 
 ![alt text](Images/2t.png)
+
+### How to make private subnet more secure?
+
+**Step 1:** Navigate to DB Virtual Machine
+- select `Networking` <br>
+
+Click on SSH rule
+- Change Source: `IP Addresses`
+- Source IP addresses: `enter public IP address`
+- Change priority
+
+![alt text](Images/s11.png)
+
+Click on MongoDB rule
+
+- Change Source: `IP Addresses`
+- Source IP addresses: `enter public CIDR block`
+- Change priority
+
+![alt text](Images/m1.png)
+
+**Successful output: sources have now been changed**
+
+![alt text](Images/100.png)
+
+### How to unassociate a public IP address from a NIC 
+
+Navigate to App Virtual Machine
+- select `Networking` <br>
+- Select Networking Interface link 
+![alt text](Images/ni.png)
+- Select IP cofigurations <br>
+![alt text](Images/set.png)
+- Click on `ipconfig1`
+![alt text](Images/con1.png)
+- Uncheck `Associate public IP address`
+![alt text](Images/check.png)
+
+**Successful output: IP address unlinked**
+
+![alt text](Images/ip.png)
