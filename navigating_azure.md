@@ -1,4 +1,4 @@
-### Creating SSH Key on Azure
+## Creating SSH Key on Azure
 
 **Step 1:** Generate an SSH Key pair locally 
 - Navigate to your GitBash terminal 
@@ -32,7 +32,7 @@
 
 ![alt text](Images/6.png)
 
-### Creating a Virtual Network on Azure
+## Creating a Virtual Network on Azure
 
 **Step 1:** Login to Azure Portal
 - https://portal.azure.com/signin/index/
@@ -76,7 +76,7 @@
 
 ![alt text](Images/12.png)
 
-### Creating a VM on Azure
+## Creating a VM on Azure
 
 **Step 1:** Login to Azure Portal
 - https://portal.azure.com/signin/index/
@@ -158,7 +158,7 @@ Step 11: Advanced
 
 ![alt text](Images/23.png)
 
-### SSH into Gitbash manually
+## SSH into Gitbash manually
 
 - Navigate to your resource that you have created
 - Select `connect`
@@ -169,7 +169,7 @@ Step 11: Advanced
 ![alt text](Images/ssh.png)
 ![alt text](Images/s1.png)
 
-### Troubleshooting - Launching APP VM 
+## Troubleshooting - Launching APP VM 
 
 When a VM was created using the script which was entered into the User Data. The Sparta Test app did not launch.
 
@@ -189,3 +189,38 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 **Successful output**
 
 ![alt text](Images/sta.png)
+
+## Launching DB VM 
+
+1. Launch a new VM 
+2. Networking 
+- Select your Virtual Network
+- Select `Private Subnet`
+- NIC network security group `Advanced`
+- Select `create new`
+- Select `add inbound rule`
+- Add in MongoDB security rule
+
+![alt text](Images/sg2.png)
+![alt text](Images/sg1.png)
+
+- Check Delete Public IP and NIC when VM is deleted
+
+**Advanced**
+- Check `Enable User data`
+- Enter your script
+
+![alt text](Images/21.png)
+
+**Create a Tag**
+- Name `Owner`
+- Value `Your Name`
+
+**Review and Create**
+- Review your configurations to ensure everything is correct.
+- Click on the "Review + create" button to validate your settings.
+- After validation passes, click on the "Create" button to create your Virtual Machine.
+
+**Successful output**
+
+![alt text](Images/data.png)
