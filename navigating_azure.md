@@ -231,7 +231,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 
 ![alt text](Images/2t.png)
 
-### How to make private subnet more secure?
+## How to make private subnet more secure?
 
 **Step 1:** Navigate to DB Virtual Machine
 - select `Networking` <br>
@@ -255,7 +255,7 @@ Click on MongoDB rule
 
 ![alt text](Images/100.png)
 
-### How to unassociate a public IP address from a NIC 
+## How to unassociate a public IP address from a NIC 
 
 Navigate to App Virtual Machine
 - select `Networking` <br>
