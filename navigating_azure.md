@@ -264,12 +264,15 @@ Navigate to App Virtual Machine
 ![alt text](Images/ni.png)
 
 - Select IP cofigurations <br>
+
 ![alt text](Images/set.png)
 
-- Click on `ipconfig1`
+- Click on `ipconfig1` <br>
+
 ![alt text](Images/con1.png)
 
-- Uncheck `Associate public IP address`
+- Uncheck `Associate public IP address` <br>
+
 ![alt text](Images/check.png)
 
 **Successful output: IP address unlinked**
