@@ -260,11 +260,15 @@ Click on MongoDB rule
 Navigate to App Virtual Machine
 - select `Networking` <br>
 - Select Networking Interface link 
+
 ![alt text](Images/ni.png)
+
 - Select IP cofigurations <br>
 ![alt text](Images/set.png)
+
 - Click on `ipconfig1`
 ![alt text](Images/con1.png)
+
 - Uncheck `Associate public IP address`
 ![alt text](Images/check.png)
 
