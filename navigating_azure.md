@@ -168,3 +168,24 @@ Step 11: Advanced
 
 ![alt text](Images/ssh.png)
 ![alt text](Images/s1.png)
+
+### Troubleshooting - Launching APP VM 
+
+When a VM was created using the script which was entered into the User Data. The Sparta Test app did not launch.
+
+**In order to overcome this:**
+
+1. Run the Script manually and see if any manual intervention is identified
+2. Blocker identified 
+![alt text](Images/blocker.png)
+3. Identify the command that overrides this manual interventions. 
+```
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--force-confnew"
+```
+
+4. Create a script and test on a new VM
+5. Launch a new VM and input the script in the user data section.
+
+**Successful output**
+
+![alt text](Images/sta.png)
