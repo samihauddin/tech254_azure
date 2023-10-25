@@ -27,6 +27,10 @@ Within Azure, there are 4 primary levels known as **scopes**.
 
 ![alt text](Images/1.png)
 
-### Virtual Machine Structure
+### 1 Tier Architecture Deployment Structure
 
 ![alt text](Images/2.png)
+
+### 2 Tier Architecture Deployment Structure
+
+![alt text](Images/2t.png)

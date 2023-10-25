@@ -192,8 +192,10 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 
 ## Launching DB VM 
 
-1. Launch a new VM 
-2. Networking 
+**Step 1**: Launch a new VM 
+- Follow the same steps as you would launch a new VM, until networking configurations <br>
+
+**Step 2:** Networking 
 - Select your Virtual Network
 - Select `Private Subnet`
 - NIC network security group `Advanced`
@@ -206,17 +208,17 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 
 - Check Delete Public IP and NIC when VM is deleted
 
-**Advanced**
+**Step 3:** Advanced
 - Check `Enable User data`
 - Enter your script
 
 ![alt text](Images/21.png)
 
-**Create a Tag**
+**Step 4:** Create a Tag
 - Name `Owner`
 - Value `Your Name`
 
-**Review and Create**
+**Step 5:** Review and Create
 - Review your configurations to ensure everything is correct.
 - Click on the "Review + create" button to validate your settings.
 - After validation passes, click on the "Create" button to create your Virtual Machine.
@@ -225,6 +227,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y -o Dpkg::Options::="--for
 
 ![alt text](Images/data.png)
 
-### 2 tier architecture deployment
+### 2 Tier Architecture Deployment
 
 ![alt text](Images/2t.png)
