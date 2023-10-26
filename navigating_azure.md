@@ -44,7 +44,7 @@
 
 **Step 3:** Configure VNet Settings
 
-- Select `Create`
+- Select `create`
 - Enter a Virtual network name
 - Region: `Europe UK South`
 
