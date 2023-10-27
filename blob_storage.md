@@ -49,9 +49,16 @@ cd app
 
 **Step 4:** Check if node is running
 ```
+# list files in app 
 ls
+
+# display a list of all running Node.js processes
 pm2 list
+
+# starting Node.js app using PM2
 pm2 start app.js
+
+# running Node.js
 node app.js
 ```
 
