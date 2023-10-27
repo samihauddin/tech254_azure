@@ -35,19 +35,19 @@ There are 3 different access tiers: <br>
 
 ### How to stop App running
 
-1. SHH into Gitbash terminal 
-2. Change from Root to User 
+**Step 1:** SHH into Gitbash terminal <br>
+**Step 2:** Change from Root to User 
 ```
 cd /
 ```
-3. Then enter app folder
+**Step 3:** Then enter app folder
 ```
 cd repo
 ls
 cd app
 ```
 
-4. Check if node is running
+**Step 4:** Check if node is running
 ```
 ls
 pm2 list
@@ -55,7 +55,7 @@ pm2 start app.js
 node app.js
 ```
 
-#### Stopping Node.js from running
+**Step 5:** Stopping Node.js from running
 
 ```
 # list all the processes running
