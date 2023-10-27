@@ -142,11 +142,6 @@ az storage blob upload \
      --auth-mode login
 ```
 
-### Modifying homepage file 
-```
-sed -i '/<h2>/i\<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg" />' /home/adminuser/repo/app/views/index.ejs
-```
-
 **Expected output**
 
 ![alt text](Images/save.png)
@@ -163,6 +158,9 @@ sed -i '/<h2>/i\<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4
 - Click `Change access level`
 - Change anonymous access level to `Blob`
 
-
 **Step 4:** Click on blob and launch the URL
 
+### Modifying homepage file 
+```
+sed -i '/<h2>/i\<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg" />' /home/adminuser/repo/app/views/index.ejs
+```
