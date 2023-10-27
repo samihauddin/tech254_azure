@@ -105,3 +105,64 @@ az login
 ### Successful output 
 
 ![alt text](Images/cli3.png)
+
+### Create a Storage Account
+```
+az storage account create 
+--name tech254samihastorage 
+--resource-group tech254 
+--location uksouth 
+--sku Standard_ZRS
+```
+
+### Create a Container 
+```
+az storage container create \
+     --account-name tech254samihastorage \
+     --name testcontainer \
+     --auth-mode login
+```
+
+### Downloading cat image
+
+```
+curl -o cat.jpg  https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg
+
+# check if cat image is there
+ls
+```
+
+### Uploading Cat image to blob
+```
+az storage blob upload \
+     --account-name tech254samihastorage \
+     --container-name testcontainer \
+     --name cat.jpg \
+     --file cat.jpg \
+     --auth-mode login
+```
+
+### Modifying homepage file 
+```
+sed -i '/<h2>/i\<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg" />' /home/adminuser/repo/app/views/index.ejs
+```
+
+**Expected output**
+
+![alt text](Images/save.png)
+
+### Making the blob public (Manually)
+
+**Step 1:** Navigate to `Storage Account`
+- Find and click on the storage account you have created
+
+**Step 2:** Navigate to `containers`
+
+**Step 3:** Making blob public
+- Click on the container you have created
+- Click `Change access level`
+- Change anonymous access level to `Blob`
+
+
+**Step 4:** Click on blob and launch the URL
+
