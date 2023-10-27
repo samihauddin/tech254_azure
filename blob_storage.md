@@ -11,6 +11,8 @@ It is commonly used for backups, archiving, data lakes, IoT data, and much more.
 - Page blobs
 - Append blobs
 
+![alt text](Images/blob.png)
+
 ### Blob Storage 
 - You can store anything in blob storage such as Videos, pictures 
 - It needs a storage account, you cannot create a blob without one. 
@@ -27,6 +29,11 @@ There are 3 different access tiers: <br>
 - **Cool Access Tier:** This tier is optimized for infrequently accessed data. <br>
 - **Archival Tier:** This is used when it is hardly ever accessed. 
 
+### Redundancy options with blob storage
+- **Local Redundancy Storage (LRS):** LRS replicates your data three times within a storage scale unit in a datacenter. This replication is done within the same region.
+- **Zone Redundancy Storage (ZRS):** ZRS replicates your data in availability zones, ensuring data residency and resiliency within the same region. Availability zones are unique physical locations within an Azure region.
+
+### How to stop App running
 
 1. SHH into Gitbash terminal 
 2. Change from Root to User 
@@ -48,7 +55,7 @@ pm2 start app.js
 node app.js
 ```
 
-### How to stop Node.js from running
+#### Stopping Node.js from running
 
 ```
 # list all the processes running
